@@ -55,6 +55,7 @@ cover/
 *.mo
 *.pot
 
+
 # Django stuff:
 *.log
 local_settings.py
@@ -143,7 +144,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+catboost_info/
 # Spyder project settings
 .spyderproject
 .spyproject

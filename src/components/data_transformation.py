@@ -65,9 +65,9 @@ class DataTransformation:
             target_column_name = "math score"
             numerical_columns = [ 'reading score', 'writing score']
             categorical_columns = ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']       
-            input_feature_train_df = train_df.drop(columns=[target_column_name], axis=1)
+            input_feature_train_df = train_df.drop(columns=[target_column_name])
             target_feature_train_df = train_df[target_column_name]
-            input_feature_test_df = test_df.drop(columns=[target_column_name], axis=1)
+            input_feature_test_df = test_df.drop(columns=[target_column_name])
             target_feature_test_df = test_df[target_column_name]
             logging.info(f"Applying preprocessing object on training and testing dataframe.")
             input_feature_train_array = preprocessor.fit_transform(input_feature_train_df)
