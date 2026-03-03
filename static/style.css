@@ -1,0 +1,111 @@
+/* ===== GLOBAL STYLING ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #667eea, #764ba2);
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* ===== CARD CONTAINER ===== */
+
+.card-container {
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+padding: 40px;
+border-radius: 20px;
+width: 100%;
+max-width: 650px;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+color: #fff;
+}
+
+/* ===== TITLE ===== */
+
+.card-container h1 {
+text-align: center;
+margin-bottom: 10px;
+font-weight: 600;
+}
+
+.subtitle {
+text-align: center;
+margin-bottom: 25px;
+font-size: 14px;
+opacity: 0.8;
+}
+
+/* ===== FORM ELEMENTS ===== */
+
+label {
+font-size: 14px;
+margin-bottom: 5px;
+display: block;
+}
+
+input,
+select {
+width: 100%;
+padding: 10px 12px;
+border-radius: 12px;
+border: none;
+outline: none;
+margin-bottom: 15px;
+font-size: 14px;
+transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+transform: scale(1.02);
+box-shadow: 0 0 0 2px #ffffff80;
+}
+
+/* ===== BUTTON ===== */
+
+button {
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 12px;
+background: #ffffff;
+color: #764ba2;
+font-weight: 600;
+font-size: 15px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+button:hover {
+background: #f1f1f1;
+transform: translateY(-2px);
+}
+
+/* ===== RESULT BOX ===== */
+
+.result-box {
+margin-top: 20px;
+padding: 15px;
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.2);
+text-align: center;
+font-weight: 600;
+font-size: 18px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+.card-container {
+padding: 25px;
+}
+}
